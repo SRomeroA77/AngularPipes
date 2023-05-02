@@ -1,0 +1,14 @@
+<p>pipes works!</p>
+<p>Nombre desde el componente: {{nombre | uppercase}}</p>
+<p>Número {{num}} en letras: {{num | letras}}</p>
+<ul>
+    <li *ngFor="let n of vector">
+        Vector {{n}}: {{n | letras |uppercase}}
+    </li>
+</ul>
+<p>Lo mismo ue antes pero pasando argumentos a las pipes</p>
+<ul>
+    <li *ngFor="let n of vector">
+        Vector {{n}}: {{n | letras:"ingles" |uppercase}}
+    </li>
+</ul>
